@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlobEater Game</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="#">![endif]-->
+    <script src="https://kit.fontawesome.com/920279a664.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="score">
+            <h2>Score</h2>
+            <p id="time_elapsed">Time elapsed: 0s</p>
+            <p id="enemy_count">Number of enemies: 1</p>
+            <p id="blob_eaten">Number of blob eaten: 0</p>
+            <!-- <button id="add_enemy_btn">Add enemy</button> -->
+            <!-- <button id="add_fixedBlob_btn">Add fixed Blob</button> -->
+            <!-- <button id="add_bonus_btn">Add bonus</button> -->
+        </div>
+        <div id="canvas_container">
+            <div id="start_screen">
+                <h1>BlobEater Game</h1>
+                <div id="commands" class="sub_div">
+                    <h2>Commands</h2>
+                    <p><i class="fas fa-arrow-up"></i> UP</p>
+                    <p><i class="fas fa-arrow-down"></i> DOWN</p>
+                    <p><i class="fas fa-arrow-left"></i> LEFT</p>
+                    <p><i class="fas fa-arrow-right"></i> RIGHT</p>
+                    <p><i class="fas">Space Bar</i> Sprint</p>
+                </div>
+                <div id="blobsGalerie" class="sub_div">
+                    <h2>Blobs</h2>
+                    <figure id="player">
+                        <img src="img/player.png" alt="playerImage" />
+                        <figcaption>Player (You)</figcaption>
+                    </figure>
+                    <figure id="enemy">
+                        <img src="img/enemy.png" alt="enemyImage" />
+                        <figcaption>Enemy Blob (Danger)</figcaption>
+                    </figure>
+                    <figure id="fixed">
+                        <img src="img/fixedBlob.png" alt="fixedBlobImage" width="50px"/>
+                        <figcaption>Fixed Blob (Danger)</figcaption>
+                    </figure>
+                    <figure id="bonus">
+                        <img src="img/bonus.png" alt="bonusImage" />
+                        <figcaption>Bonus (Invicible for 5s)</figcaption>
+                    </figure>
+                </div>
+                <div id="rules">
+                        <h2>Rules</h2>
+                        <p>Survive!! Eat bonus blobs to kill any blob and gain points.</p>
+                        <p class="start">Press Enter to Start</p>
+                </div>
+            </div>
+             
+            <canvas id="bouncy_canvas" width="1080px" height="606px"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
+
