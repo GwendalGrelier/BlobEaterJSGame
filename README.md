@@ -5,6 +5,9 @@ Blob Eater is a small game developped in HTML/CSS and Javascript.
 The main goal is to survive as long as possible in an hostile environment where your are swamped by a continuous wave 
 of enemy blobs.
 
+![Alt text](/img/screenshot.png?raw=true)
+
+
 This is you: 
 
 ![Alt text](/img/player.png?raw=true) 
